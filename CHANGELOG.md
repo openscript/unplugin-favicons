@@ -1,5 +1,11 @@
 # @openscript/unplugin-favicons
 
+## 1.1.6
+
+### Patch Changes
+
+- ee6c4f4: Switch to node bundler
+
 ## 1.1.5
 
 ### Patch Changes
