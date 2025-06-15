@@ -27,7 +27,7 @@ SOFTWARE.
 
 # Licenses of bundled types
 
-The published @anolilab/unplugin-favicons artifact additionally contains code with the following licenses:
+The published @openscript/unplugin-favicons artifact additionally contains code with the following licenses:
 (MIT OR CC0-1.0)
 
 # Bundled types:

@@ -28,3 +28,5 @@ yarn-error.log*
 examples/**/dist
 examples/nuxt3/.nuxt
 examples/nuxt3/.output
+
+.pnpm-store

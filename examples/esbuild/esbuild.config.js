@@ -1,4 +1,4 @@
-import faviconsPlugin from "@anolilab/unplugin-favicons/esbuild";
+import faviconsPlugin from "@openscript/unplugin-favicons/esbuild";
 import { build } from "esbuild";
 
 build({

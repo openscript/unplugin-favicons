@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     modules: [
         [
-            "@anolilab/unplugin-favicons/nuxt",
+            "@openscript/unplugin-favicons/nuxt",
             {
                 logo: "./assets/logo.png",
                 appName: "redacted",

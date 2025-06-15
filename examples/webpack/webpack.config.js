@@ -1,6 +1,6 @@
 import { resolve } from "node:path";
 
-import faviconsPlugin from "@anolilab/unplugin-favicons/webpack";
+import faviconsPlugin from "@openscript/unplugin-favicons/webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
 const config = {

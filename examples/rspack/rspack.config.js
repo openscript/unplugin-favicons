@@ -1,4 +1,4 @@
-import FaviconsPlugin from "@anolilab/unplugin-favicons/rspack";
+import FaviconsPlugin from "@openscript/unplugin-favicons/rspack";
 
 export default {
     builtins: {

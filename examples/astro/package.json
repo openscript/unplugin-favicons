@@ -9,7 +9,7 @@
         "start": "astro dev"
     },
     "dependencies": {
-        "@anolilab/unplugin-favicons": "workspace:*",
+        "@openscript/unplugin-favicons": "workspace:*",
         "astro": "^5.0.9"
     }
 }

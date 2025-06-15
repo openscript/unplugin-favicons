@@ -1,4 +1,4 @@
-import faviconsPlugin from "@anolilab/unplugin-favicons/rollup";
+import faviconsPlugin from "@openscript/unplugin-favicons/rollup";
 import html from "@rollup/plugin-html";
 
 export default {

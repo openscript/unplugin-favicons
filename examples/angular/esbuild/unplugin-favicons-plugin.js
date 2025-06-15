@@ -1,6 +1,6 @@
-import faviconsPlugin from "@anolilab/unplugin-favicons/esbuild";
+import faviconsPlugin from "@openscript/unplugin-favicons/esbuild";
 
-/** @typedef {import("@anolilab/unplugin-favicons/esbuild").FaviconsLogoPluginOptions} config **/
+/** @typedef {import("@openscript/unplugin-favicons/esbuild").FaviconsLogoPluginOptions} config **/
 const config = {
     logo: "./src/assets/favicon.png",
     outputPath: "assets/lexus/",

@@ -10,7 +10,7 @@
         "preview": "nuxt preview"
     },
     "dependencies": {
-        "@anolilab/unplugin-favicons": "workspace:*"
+        "@openscript/unplugin-favicons": "workspace:*"
     },
     "devDependencies": {
         "nuxt": "^3.14.1592",

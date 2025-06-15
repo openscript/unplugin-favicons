@@ -24,15 +24,15 @@ Create and manage favicons with Vite, Rollup, Webpack, Rspack, Nuxt, Vue CLI, Sv
 ## Install
 
 ```bash
-npm install --dev-save @anolilab/unplugin-favicons favicons
+npm install --dev-save @openscript/unplugin-favicons favicons
 ```
 
 ```sh
-yarn add -D @anolilab/unplugin-favicons favicons
+yarn add -D @openscript/unplugin-favicons favicons
 ```
 
 ```sh
-pnpm add -D @anolilab/unplugin-favicons favicons
+pnpm add -D @openscript/unplugin-favicons favicons
 ```
 
 ## Zero Config Usage
@@ -72,7 +72,7 @@ unpluginFavicons({
 
 ```ts
 // vite.config.ts
-import unpluginFavicons from "@anolilab/unplugin-favicons/vite";
+import unpluginFavicons from "@openscript/unplugin-favicons/vite";
 
 export default defineConfig({
     plugins: [
@@ -90,7 +90,7 @@ export default defineConfig({
 
 ```ts
 // rollup.config.js
-import unpluginFavicons from "@anolilab/unplugin-favicons/rollup";
+import unpluginFavicons from "@openscript/unplugin-favicons/rollup";
 // To use the auto inject
 import html from "@rollup/plugin-html";
 
@@ -115,7 +115,7 @@ import { build } from "esbuild";
 
 build({
     plugins: [
-        require("@anolilab/unplugin-favicons/esbuild")({
+        require("@openscript/unplugin-favicons/esbuild")({
             /* options */
         }),
     ],
@@ -132,7 +132,7 @@ build({
 module.exports = {
     /* ... */
     plugins: [
-        require("@anolilab/unplugin-favicons/webpack")({
+        require("@openscript/unplugin-favicons/webpack")({
             /* options */
         }),
     ],
@@ -149,7 +149,7 @@ module.exports = {
 module.exports = {
     configureWebpack: {
         plugins: [
-            require("@anolilab/unplugin-favicons/webpack")({
+            require("@openscript/unplugin-favicons/webpack")({
                 /* options */
             }),
         ],
@@ -169,7 +169,7 @@ Nuxt 2 and [Nuxt Bridge](https://github.com/nuxt/bridge)
 export default {
     buildModules: [
         [
-            "@anolilab/unplugin-favicons/nuxt",
+            "@openscript/unplugin-favicons/nuxt",
             {
                 /* options */
             },
@@ -185,7 +185,7 @@ Nuxt 3
 export default defineNuxtConfig({
     modules: [
         [
-            "@anolilab/unplugin-favicons/nuxt",
+            "@openscript/unplugin-favicons/nuxt",
             {
                 /* options */
             },
@@ -201,13 +201,13 @@ See [the Nuxt example](examples/nuxt) for a working example project.
 <details>
 <summary>SvelteKit</summary><br>
 
-The `@anolilab/unplugin-favicons` plugin should be configured in the `vite.config.js` configuration file:
+The `@openscript/unplugin-favicons` plugin should be configured in the `vite.config.js` configuration file:
 
 ```ts
 // vite.config.js
 import { defineConfig } from "vite";
 import { sveltekit } from "@sveltejs/kit/vite";
-import unpluginFavicons from "@anolilab/unplugin-favicons/vite";
+import unpluginFavicons from "@openscript/unplugin-favicons/vite";
 
 export default defineConfig({
     plugins: [
@@ -222,7 +222,7 @@ export default defineConfig({
 Then add `src/hooks.server.ts` to rewrite the head tag with [`hooks`](https://kit.svelte.dev/docs/hooks):
 
 ```ts
-import { metadata } from "@anolilab/unplugin-favicons/runtime"; // use default import
+import { metadata } from "@openscript/unplugin-favicons/runtime"; // use default import
 import type { Handle } from "@sveltejs/kit";
 
 export const handle: Handle = async ({ event, resolve }) => {
@@ -248,13 +248,13 @@ Svelte support requires the `@sveltejs/vite-plugin-svelte` plugin:
 npm i -D @sveltejs/vite-plugin-svelte
 ```
 
-The `@anolilab/unplugin-favicons` plugin should be configured in the `vite.config.js` configuration file:
+The `@openscript/unplugin-favicons` plugin should be configured in the `vite.config.js` configuration file:
 
 ```ts
 // vite.config.js
 import { defineConfig } from "vite";
 import { svelte } from "@sveltejs/vite-plugin-svelte";
-import unpluginFavicons from "@anolilab/unplugin-favicons/vite";
+import unpluginFavicons from "@openscript/unplugin-favicons/vite";
 
 export default defineConfig({
     plugins: [
@@ -275,7 +275,7 @@ See [the Svelte + Vite example](examples/vite-svelte) for a working example proj
 <details>
 <summary>Next.js (Not Supported for now)</summary><br>
 
-The `@anolilab/unplugin-favicons` plugin should be configured on `next.config.js` configuration file:
+The `@openscript/unplugin-favicons` plugin should be configured on `next.config.js` configuration file:
 
 ```js
 /** @type {import('next').NextConfig} */
@@ -283,7 +283,7 @@ module.exports = {
     reactStrictMode: true,
     webpack(config) {
         config.plugins.push(
-            require("@anolilab/unplugin-favicons/webpack")({
+            require("@openscript/unplugin-favicons/webpack")({
                 /* options */
             }),
         );
@@ -305,7 +305,7 @@ See [the Next.js example](examples/next) for a working example project.
 ```ts
 // astro.config.mjs
 import { defineConfig } from "astro/config";
-import unpluginFavicons from "@anolilab/unplugin-favicons/vite";
+import unpluginFavicons from "@openscript/unplugin-favicons/vite";
 
 // https://astro.build/config
 export default defineConfig({
@@ -479,10 +479,10 @@ Vite calls the HTML transform hook for each HTML file template file you have con
 
 ### Runtime
 
-The `@anolilab/unplugin-favicons` plugin also exports a runtime module that can be used to inject the generated metadata into your HTML files or access the `files` and `images` used in the metadata.
+The `@openscript/unplugin-favicons` plugin also exports a runtime module that can be used to inject the generated metadata into your HTML files or access the `files` and `images` used in the metadata.
 
 ```ts
-import { metadata, images, files } from "@anolilab/unplugin-favicons/runtime";
+import { metadata, images, files } from "@openscript/unplugin-favicons/runtime";
 
 console.log(metadata, images, files);
 ```
@@ -525,7 +525,7 @@ The anolilab vite-plugin-favicon is open-sourced software licensed under the [MI
 
 [typescript-image]: https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript
 [typescript-url]: "typescript"
-[license-image]: https://img.shields.io/npm/l/@anolilab/unplugin-favicons?color=blueviolet&style=for-the-badge
+[license-image]: https://img.shields.io/npm/l/@openscript/unplugin-favicons?color=blueviolet&style=for-the-badge
 [license-url]: LICENSE.md "license"
-[npm-image]: https://img.shields.io/npm/v/@anolilab/unplugin-favicons/latest.svg?style=for-the-badge&logo=npm
+[npm-image]: https://img.shields.io/npm/v/@openscript/unplugin-favicons/latest.svg?style=for-the-badge&logo=npm
 [npm-url]: https://www.npmjs.com/login?next=%2Fpackage%2F%40anolilab%2Funplugin-favicons%2Fv%2Flatest "npm"

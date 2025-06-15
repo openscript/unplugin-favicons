@@ -1,3 +1,0 @@
-{
-    extends: ["github>anolilab/renovate-config"],
-}

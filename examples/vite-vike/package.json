@@ -9,7 +9,7 @@
         "prod": "npm run lint && npm run build"
     },
     "dependencies": {
-        "@anolilab/unplugin-favicons": "workspace:*",
+        "@openscript/unplugin-favicons": "workspace:*",
         "@vitejs/plugin-react": "^4.3.4",
         "eslint": "^9.17.0",
         "eslint-plugin-react": "^7.37.2",

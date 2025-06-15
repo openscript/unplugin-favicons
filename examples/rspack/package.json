@@ -9,7 +9,7 @@
         "clean": "rimraf node_modules dist"
     },
     "dependencies": {
-        "@anolilab/unplugin-favicons": "workspace:*"
+        "@openscript/unplugin-favicons": "workspace:*"
     },
     "devDependencies": {
         "@rspack/cli": "^1.1.6",

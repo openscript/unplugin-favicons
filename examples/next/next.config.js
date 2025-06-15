@@ -1,4 +1,4 @@
-import faviconsPlugin from "@anolilab/unplugin-favicons/webpack";
+import faviconsPlugin from "@openscript/unplugin-favicons/webpack";
 
 /** @type {import('next').NextConfig} */
 export default {

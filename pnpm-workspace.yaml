@@ -1,2 +1,11 @@
 packages:
-    - examples/*
+  - examples/*
+
+onlyBuiltDependencies:
+  - '@sveltejs/kit'
+  - esbuild
+  - lmdb
+  - msgpackr-extract
+  - nice-napi
+  - sharp
+  - svelte-preprocess

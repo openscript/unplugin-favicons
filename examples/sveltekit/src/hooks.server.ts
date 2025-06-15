@@ -1,4 +1,4 @@
-import { metadata } from "@anolilab/unplugin-favicons/runtime";
+import { metadata } from "@openscript/unplugin-favicons/runtime";
 import type { Handle } from "@sveltejs/kit";
 
 export const handle: Handle = async ({ event, resolve }) => {

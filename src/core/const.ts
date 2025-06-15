@@ -1,4 +1,4 @@
-export const PLUGIN_NAME = "@anolilab/unplugin-favicons";
+export const PLUGIN_NAME = "@openscript/unplugin-favicons";
 
 /**
  * By default, `favicons` renders assets for each icon type and config is used

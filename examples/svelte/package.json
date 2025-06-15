@@ -9,7 +9,7 @@
         "serve": "npm run build && vite preview"
     },
     "devDependencies": {
-        "@anolilab/unplugin-favicons": "workspace:*",
+        "@openscript/unplugin-favicons": "workspace:*",
         "@sveltejs/vite-plugin-svelte": "^5.0.3",
         "@tsconfig/svelte": "^5.0.4",
         "svelte": "^5.14.4",
