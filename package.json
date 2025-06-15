@@ -89,7 +89,9 @@
         "test": "vitest run",
         "test:bench": "vitest bench",
         "test:coverage": "vitest run --coverage",
-        "test:watch": "vitest"
+        "test:watch": "vitest",
+        "version": "changeset version",
+        "tag": "changeset tag"
     },
     "dependencies": {
         "@visulima/find-cache-dir": "^1.0.31",
@@ -108,6 +110,7 @@
     "devDependencies": {
         "@babel/core": "^7.27.4",
         "@babel/eslint-parser": "7.27.5",
+        "@changesets/cli": "^2.29.4",
         "@nuxt/kit": "^3.17.5",
         "@nuxt/schema": "^3.17.5",
         "@rspack/core": "^1.3.15",

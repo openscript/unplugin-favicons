@@ -11,16 +11,6 @@ Create and manage favicons with Vite, Rollup, Webpack, Rspack, Nuxt, Vue CLI, Sv
 
 ---
 
-<div align="center">
-    <p>
-        <sup>
-            Daniel Bannert's open source work is supported by the community on <a href="https://github.com/sponsors/prisis">GitHub Sponsors</a>
-        </sup>
-    </p>
-</div>
-
----
-
 ## Install
 
 ```bash
