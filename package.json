@@ -1,6 +1,6 @@
 {
     "name": "@openscript/unplugin-favicons",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Generate favicons for your project with caching for blazing fast rebuilds.",
     "keywords": [
         "plugin",
