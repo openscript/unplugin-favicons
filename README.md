@@ -5,8 +5,6 @@
 Create and manage favicons with Vite, Rollup, Webpack, Rspack, Nuxt, Vue CLI, Svelte, esbuild and Astro on top of
 [itgalaxy/favicons](https://github.com/itgalaxy/favicons)
 
-[![typescript-image]][typescript-url] [![npm-image]][npm-url] [![license-image]][license-url]
-
 </div>
 
 ---
