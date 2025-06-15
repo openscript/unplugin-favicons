@@ -1,11 +1,6 @@
 /// <reference types="vitest" />
 import { defineConfig, configDefaults, coverageConfigDefaults } from "vitest/config";
 
-const VITEST_SEQUENCE_SEED = Date.now();
-
-console.log("VITEST_SEQUENCE_SEED", VITEST_SEQUENCE_SEED);
-
-// https://vitejs.dev/config/
 export default defineConfig({
     test: {
         ...configDefaults,
@@ -17,10 +12,6 @@ export default defineConfig({
             exclude: ["__fixtures__/**", "__bench__/**", "scripts/**"],
         },
         environment: "node",
-        reporters: process.env["CI_PREFLIGHT"] ? ["basic", "github-actions"] : ["basic"],
-        sequence: {
-            seed: VITEST_SEQUENCE_SEED,
-        },
         typecheck: {
             enabled: false,
         },

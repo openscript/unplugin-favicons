@@ -3,12 +3,13 @@
     "extends": [
         "@tsconfig/strictest/tsconfig",
         "@tsconfig/node22/tsconfig",
-        "@tsconfig/esm/tsconfig"
     ],
     "compilerOptions": {
         "isolatedModules": true,
         "noUnusedParameters": false,
         "exactOptionalPropertyTypes": false,
+        "module": "esnext",
+        "moduleResolution": "bundler",
         "types": [
             "vite/client",
             "node"
