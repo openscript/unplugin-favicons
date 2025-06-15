@@ -8,7 +8,9 @@
         "isolatedModules": true,
         "noUnusedParameters": false,
         "exactOptionalPropertyTypes": false,
+        "allowImportingTsExtensions": false,
         "module": "esnext",
+        "target": "es2022",
         "moduleResolution": "bundler",
         "types": [
             "vite/client",
