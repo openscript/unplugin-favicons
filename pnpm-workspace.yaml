@@ -2,6 +2,7 @@ packages:
   - examples/*
 
 onlyBuiltDependencies:
+  - '@parcel/watcher'
   - '@sveltejs/kit'
   - esbuild
   - lmdb
@@ -9,3 +10,4 @@ onlyBuiltDependencies:
   - nice-napi
   - sharp
   - svelte-preprocess
+  - unrs-resolver
