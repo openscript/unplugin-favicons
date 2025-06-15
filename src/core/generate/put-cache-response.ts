@@ -1,8 +1,8 @@
 import { colorize } from "consola/utils";
 import type { FaviconFile, FaviconHtmlElement, FaviconImage, FaviconResponse } from "favicons";
 
-import { put as cachePut } from "../utils/cache";
-import consola from "../utils/consola";
+import { put as cachePut } from "../utils/cache.js";
+import consola from "../utils/consola.js";
 
 /**
  * @private

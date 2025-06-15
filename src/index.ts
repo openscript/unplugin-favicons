@@ -1,6 +1,6 @@
 import { createUnplugin } from "unplugin";
 
-import unpluginFactory from "./core/unplugin-factory";
+import unpluginFactory from "./core/unplugin-factory.js";
 
 const unplugin = /* #__PURE__ */ createUnplugin(unpluginFactory);
 

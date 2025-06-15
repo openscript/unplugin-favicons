@@ -2,8 +2,8 @@ import { readFileSync } from "node:fs";
 
 import stringify from "fast-json-stable-stringify";
 
-import type { JobConfig } from "../../types";
-import { computeKey as cacheComputeKey } from "../utils/cache";
+import type { JobConfig } from "../../types.js";
+import { computeKey as cacheComputeKey } from "../utils/cache.js";
 
 /**
  * @private

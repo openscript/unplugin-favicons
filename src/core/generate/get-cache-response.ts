@@ -1,6 +1,6 @@
 import type { FaviconResponse } from "favicons";
 
-import { get as cacheGet } from "../utils/cache";
+import { get as cacheGet } from "../utils/cache.js";
 
 /**
  * @private

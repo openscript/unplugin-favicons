@@ -5,12 +5,12 @@ import type { FaviconOptions, FaviconResponse } from "favicons";
 import { favicons } from "favicons";
 import type { ReadonlyDeep } from "type-fest";
 
-import type { FaviconsIconsPluginOptions, FaviconsLogoPluginOptions, JobConfig } from "../../types";
-import { DEFAULT_FAVICONS_OPTIONS, DEFAULT_ICON_OPTIONS } from "../const";
-import consola from "../utils/consola";
-import generateCacheKeyForJob from "./generate-cache-key-for-job";
-import getCacheResponse from "./get-cache-response";
-import putCacheResponse from "./put-cache-response";
+import type { FaviconsIconsPluginOptions, FaviconsLogoPluginOptions, JobConfig } from "../../types.js";
+import { DEFAULT_FAVICONS_OPTIONS, DEFAULT_ICON_OPTIONS } from "../const.js";
+import consola from "../utils/consola.js";
+import generateCacheKeyForJob from "./generate-cache-key-for-job.js";
+import getCacheResponse from "./get-cache-response.js";
+import putCacheResponse from "./put-cache-response.js";
 
 /**
  * @private

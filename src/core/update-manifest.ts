@@ -1,5 +1,5 @@
-import type { AndroidManifest, EmittedFile, FirefoxManifest } from "../types";
-import findEmittedFile from "./utils/find-emitted-file";
+import type { AndroidManifest, EmittedFile, FirefoxManifest } from "../types.js";
+import findEmittedFile from "./utils/find-emitted-file.js";
 
 /**
  * Provided a list of EmittedFile objects from Vite and an Android or Firefox

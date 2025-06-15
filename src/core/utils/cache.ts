@@ -3,8 +3,8 @@ import { get as cacheGet, put as cachePut } from "cacache";
 import { colorize } from "consola/utils";
 import { fromData } from "ssri";
 
-import { PLUGIN_NAME } from "../const";
-import consola from "./consola";
+import { PLUGIN_NAME } from "../const.js";
+import consola from "./consola.js";
 
 /**
  * Cache subdirectory in node_modules/.cache.

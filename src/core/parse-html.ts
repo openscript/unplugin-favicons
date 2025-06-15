@@ -2,8 +2,8 @@ import { parseFragment } from "parse5";
 // @ts-expect-error - No types available
 import type { Attribute, Element } from "parse5/dist/tree-adapters/default";
 
-import type { EmittedFile, HtmlTagDescriptor } from "../types";
-import findEmittedFile from "./utils/find-emitted-file";
+import type { EmittedFile, HtmlTagDescriptor } from "../types.js";
+import findEmittedFile from "./utils/find-emitted-file.js";
 
 /**
  * Provided an array of EmittedFile objects and an array of HTML strings

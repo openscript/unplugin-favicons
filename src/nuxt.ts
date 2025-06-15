@@ -1,9 +1,9 @@
 import { addVitePlugin, addWebpackPlugin, defineNuxtModule } from "@nuxt/kit";
 import type { NuxtModule } from "@nuxt/schema";
 
-import type { FaviconsIconsPluginOptions, FaviconsLogoPluginOptions } from "./types";
-import vite from "./vite";
-import webpack from "./webpack";
+import type { FaviconsIconsPluginOptions, FaviconsLogoPluginOptions } from "./types.js";
+import vite from "./vite.js";
+import webpack from "./webpack.js";
 
 type ModuleOptions = FaviconsIconsPluginOptions | FaviconsLogoPluginOptions;
 
@@ -17,4 +17,4 @@ export default defineNuxtModule<ModuleOptions>({
         addWebpackPlugin(() => webpack(options));
     },
 }) as NuxtModule<ModuleOptions>;
-export type { FaviconsIconsPluginOptions, FaviconsLogoPluginOptions } from "./types";
+export type { FaviconsIconsPluginOptions, FaviconsLogoPluginOptions } from "./types.js";

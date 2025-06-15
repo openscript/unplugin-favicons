@@ -1,7 +1,6 @@
-import type { Compilation as RspackCompilation } from "@rspack/core";
-import type HtmlRspackPlugin from "@rspack/plugin-html";
+import type { HtmlRspackPluginOptions, Compilation as RspackCompilation } from "@rspack/core";
 
-const findHtmlRspackPlugin = (compilation: RspackCompilation): HtmlRspackPlugin | undefined => {
+const findHtmlRspackPlugin = (compilation: RspackCompilation): HtmlRspackPluginOptions | undefined => {
     const {
         compiler: { options },
     } = compilation;
@@ -12,7 +11,7 @@ const findHtmlRspackPlugin = (compilation: RspackCompilation): HtmlRspackPlugin 
         return undefined;
     }
 
-    return Plugin as unknown as HtmlRspackPlugin;
+    return Plugin as unknown as HtmlRspackPluginOptions;
 };
 
 export default findHtmlRspackPlugin;

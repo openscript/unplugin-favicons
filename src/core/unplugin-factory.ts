@@ -11,16 +11,16 @@ import type { UnpluginBuildContext, UnpluginFactory, UnpluginOptions } from "unp
 import type { ConfigEnv, UserConfig } from "vite";
 import type { Compilation as WebpackCompilation } from "webpack";
 
-import type { EmittedFile, FaviconsIconsPluginOptions, FaviconsLogoPluginOptions, HtmlTagDescriptor, Runtime } from "../types";
-import { PLUGIN_NAME } from "./const";
-import generateFavicons from "./generate/generate-favicons";
-import parseHtml from "./parse-html";
-import updateManifest from "./update-manifest";
-import consola from "./utils/consola";
-import findHtmlRspackPlugin from "./utils/find-html-rspack-plugin";
-import findHtmlWebpackPlugin from "./utils/find-html-webpack-plugin";
-import formatDuration from "./utils/format-duration";
-import Oracle from "./utils/oracle";
+import type { EmittedFile, FaviconsIconsPluginOptions, FaviconsLogoPluginOptions, HtmlTagDescriptor, Runtime } from "../types.js";
+import { PLUGIN_NAME } from "./const.js";
+import generateFavicons from "./generate/generate-favicons.js";
+import parseHtml from "./parse-html.js";
+import updateManifest from "./update-manifest.js";
+import consola from "./utils/consola.js";
+import findHtmlRspackPlugin from "./utils/find-html-rspack-plugin.js";
+import findHtmlWebpackPlugin from "./utils/find-html-webpack-plugin.js";
+import formatDuration from "./utils/format-duration.js";
+import Oracle from "./utils/oracle.js";
 
 // eslint-disable-next-line sonarjs/cognitive-complexity
 const unpluginFactory: UnpluginFactory<FaviconsIconsPluginOptions | FaviconsLogoPluginOptions | undefined, false> = (options, meta): UnpluginOptions => {

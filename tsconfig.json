@@ -9,9 +9,9 @@
         "noUnusedParameters": false,
         "exactOptionalPropertyTypes": false,
         "allowImportingTsExtensions": false,
-        "module": "esnext",
+        "module": "nodenext",
         "target": "es2022",
-        "moduleResolution": "bundler",
+        "moduleResolution": "nodenext",
         "types": [
             "vite/client",
             "node"

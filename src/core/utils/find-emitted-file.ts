@@ -1,6 +1,6 @@
 import { parse } from "node:path";
 
-import type { EmittedFile } from "../../types";
+import type { EmittedFile } from "../../types.js";
 
 /**
  * Provided a list of EmittedFile descriptors and a search query, returns the
