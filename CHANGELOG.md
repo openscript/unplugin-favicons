@@ -1,5 +1,11 @@
 # @openscript/unplugin-favicons
 
+## 1.1.4
+
+### Patch Changes
+
+- d2038f3: Fix build
+
 ## 1.1.3
 
 ### Patch Changes
