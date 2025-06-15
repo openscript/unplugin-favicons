@@ -1,6 +1,6 @@
 {
     "name": "@openscript/unplugin-favicons",
-    "version": "1.1.0-alpha.1",
+    "version": "1.1.1",
     "description": "Generate favicons for your project with caching for blazing fast rebuilds.",
     "keywords": [
         "plugin",
@@ -32,7 +32,7 @@
     },
     "license": "MIT",
     "author": {
-        "name": "Robin Bühler",
+        "name": "Robin",
         "email": "hi+r@obin.ch",
         "url": "https://r.obin.ch"
     },
@@ -80,24 +80,11 @@
         "dist/**",
         "CHANGELOG.md",
         "LICENSE.md",
-        "SECURITY.md",
         "README.md"
     ],
     "scripts": {
-        "build": "packem build --development",
-        "build:prod": "packem build --production",
-        "lint:eslint": "eslint . --ext js,cjs,mjs,jsx,ts,tsx,json,yaml,yml,md,mdx --max-warnings=0 --config .eslintrc.cjs",
-        "lint:eslint:fix": "pnpm run lint:eslint --fix",
-        "lint:package-json": "publint",
-        "lint:prettier": "prettier --config=.prettierrc.cjs --check .",
-        "lint:prettier:fix": "prettier --config=.prettierrc.cjs --write .",
-        "lint:secrets": "secretlint **/*",
-        "lint:staged": "lint-staged --verbose --concurrent false --debug",
-        "lint:text": "textlint ./.github/ ./README.md ./UPGRADE.md --parallel --experimental --cache --dry-run",
-        "lint:text:fix": "textlint ./.github/ ./README.md ./UPGRADE.md --parallel --experimental --fix",
         "lint:types": "tsc --noEmit",
         "run:example": "cd example && pnpm exec vite build",
-        "sort-package-json": "sort-package-json ./package.json examples/**/package.json",
         "test": "vitest run",
         "test:bench": "vitest bench",
         "test:coverage": "vitest run --coverage",
