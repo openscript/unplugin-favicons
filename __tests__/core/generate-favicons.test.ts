@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { favicons } from "favicons";
 import { describe, expect, it, vi } from "vitest";
 
-import generateFavicons from "../../src/core/generate/generate-favicons";
+import generateFavicons from "../../src/core/generate/generate-favicons.js";
 
 const { mockedFavicons, mockedGetCacheResponse, mockedPutCacheResponse } = vi.hoisted(() => {
     return {
