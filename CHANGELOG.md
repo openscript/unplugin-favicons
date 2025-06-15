@@ -1,5 +1,11 @@
 # @openscript/unplugin-favicons
 
+## 1.1.5
+
+### Patch Changes
+
+- 360c8bf: Fix tsconfig
+
 ## 1.1.4
 
 ### Patch Changes
