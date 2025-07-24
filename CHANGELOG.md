@@ -1,5 +1,11 @@
 # @openscript/unplugin-favicons
 
+## 1.1.7
+
+### Patch Changes
+
+- a8e3412: Upgrade dependencies
+
 ## 1.1.6
 
 ### Patch Changes
