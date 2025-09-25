@@ -44,6 +44,12 @@ interface BaseFaviconsPluginOptions {
      * @default process.cwd()
      */
     projectRoot?: string;
+    /**
+     * Whether to generate absolute paths for favicon links instead of relative paths.
+     * When true, paths will start with "/" regardless of the base configuration.
+     * @default false
+     */
+    absolutePaths?: boolean;
 }
 
 type FaviconsConfig = Partial<FaviconOptions>;
