@@ -25,8 +25,8 @@ describe("parseHtml", () => {
         const result = parseHtml(mockEmittedFiles, mockHtmlFragments, base);
 
         expect(result).toHaveLength(2);
-        expect(result[0].attrs?.href).toBe("/assets/favicon-16x16.png");
-        expect(result[1].attrs?.href).toBe("/assets/favicon-32x32.png");
+        expect(result[0]?.attrs?.["href"]).toBe("/assets/favicon-16x16.png");
+        expect(result[1]?.attrs?.["href"]).toBe("/assets/favicon-32x32.png");
     });
 
     it("should generate relative paths with custom base", () => {
@@ -34,8 +34,8 @@ describe("parseHtml", () => {
         const result = parseHtml(mockEmittedFiles, mockHtmlFragments, base);
 
         expect(result).toHaveLength(2);
-        expect(result[0].attrs?.href).toBe("./dist/assets/favicon-16x16.png");
-        expect(result[1].attrs?.href).toBe("./dist/assets/favicon-32x32.png");
+        expect(result[0]?.attrs?.["href"]).toBe("./dist/assets/favicon-16x16.png");
+        expect(result[1]?.attrs?.["href"]).toBe("./dist/assets/favicon-32x32.png");
     });
 
     it("should generate absolute paths when absolutePaths is true", () => {
@@ -44,8 +44,8 @@ describe("parseHtml", () => {
         const result = parseHtml(mockEmittedFiles, mockHtmlFragments, base, absolutePaths);
 
         expect(result).toHaveLength(2);
-        expect(result[0].attrs?.href).toBe("/assets/favicon-16x16.png");
-        expect(result[1].attrs?.href).toBe("/assets/favicon-32x32.png");
+        expect(result[0]?.attrs?.["href"]).toBe("/assets/favicon-16x16.png");
+        expect(result[1]?.attrs?.["href"]).toBe("/assets/favicon-32x32.png");
     });
 
     it("should handle resolvedName that already starts with /", () => {
@@ -62,18 +62,18 @@ describe("parseHtml", () => {
         const result = parseHtml(emittedFilesWithSlash, fragments, base, absolutePaths);
 
         expect(result).toHaveLength(1);
-        expect(result[0].attrs?.href).toBe("/assets/favicon-16x16.png");
+        expect(result[0]?.attrs?.["href"]).toBe("/assets/favicon-16x16.png");
     });
 
     it("should preserve other attributes", () => {
         const result = parseHtml(mockEmittedFiles, mockHtmlFragments, "/");
 
-        expect(result[0].attrs?.rel).toBe("icon");
-        expect(result[0].attrs?.type).toBe("image/png");
-        expect(result[0].attrs?.sizes).toBe("16x16");
-        expect(result[0].tag).toBe("link");
-        expect(result[0].injectTo).toBe("head");
-        expect(result[0].fragment).toBe('<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">');
+        expect(result[0]?.attrs?.["rel"]).toBe("icon");
+        expect(result[0]?.attrs?.["type"]).toBe("image/png");
+        expect(result[0]?.attrs?.["sizes"]).toBe("16x16");
+        expect(result[0]?.tag).toBe("link");
+        expect(result[0]?.injectTo).toBe("head");
+        expect(result[0]?.fragment).toBe('<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">');
     });
 
     it("should throw error when corresponding file is not found", () => {
