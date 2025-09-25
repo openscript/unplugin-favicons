@@ -416,6 +416,9 @@ In combination with [Vite’s html plugin hooks](https://vitejs.dev/guide/api-pl
     logo?: "assets/logo.png",
     /** Inject html links/metadata. */
     inject?: true,
+    /** Whether to generate absolute paths for favicon links instead of relative paths.
+     * When true, paths will start with "/" regardless of the base configuration. */
+    absolutePaths?: false,
     /** `Favicons` configuration options
     *  - [See `favicons` documentation](https://github.com/itgalaxy/favicons) */
     favicons?: FaviconsConfig,
@@ -460,6 +463,24 @@ unpluginFavicons({
 
 To fine tune what icons/metadata is generated, refer to
 [favicons’ documentation](https://github.com/itgalaxy/favicons#usage).
+
+#### Using Absolute Paths
+
+By default, the plugin generates paths relative to your configured base URL. If you need absolute paths (starting with "/"), you can use the `absolutePaths` option:
+
+```javascript
+unpluginFavicons({
+    logo: "./src/logo.png",
+    absolutePaths: true, // Generate absolute paths like "/assets/favicon.png" instead of "./dist/assets/favicon.png"
+    favicons: {
+        appName: "my-app",
+        background: "#ddd",
+        theme_color: "#333",
+    },
+});
+```
+
+This is particularly useful when your application is served from different base paths or when you need consistent absolute references across different deployment environments.
 
 #### Handling Multiple HTML Files
 

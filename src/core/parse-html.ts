@@ -14,7 +14,7 @@ import findEmittedFile from "./utils/find-emitted-file.js";
  *
  * See: https://vitejs.dev/guide/api-plugin.html#transformindexhtml
  */
-const parseHtml = (emittedFiles: EmittedFile[], fragments: string[], base = "/"): HtmlTagDescriptor[] =>
+const parseHtml = (emittedFiles: EmittedFile[], fragments: string[], base = "/", absolutePaths = false): HtmlTagDescriptor[] =>
     fragments.flatMap((fragment) => {
         const originalFragment = fragment;
         const parsedFragment = parseFragment(fragment);
@@ -38,7 +38,15 @@ const parseHtml = (emittedFiles: EmittedFile[], fragments: string[], base = "/")
                         // we should respect base options defined in vite.config
                         if (correspondingFile) {
                             // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,no-param-reassign
-                            attribute.value = `${base}${correspondingFile.resolvedName}`;
+                            if (absolutePaths) {
+                                // Force absolute paths by ensuring they start with "/"
+                                const resolvedPath = correspondingFile.resolvedName.startsWith("/") 
+                                    ? correspondingFile.resolvedName 
+                                    : `/${correspondingFile.resolvedName}`;
+                                attribute.value = resolvedPath;
+                            } else {
+                                attribute.value = `${base}${correspondingFile.resolvedName}`;
+                            }
                         } else {
                             // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
                             throw new Error(`Unable to find a corresponding file for href: ${attribute.value}`);
