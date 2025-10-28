@@ -119,7 +119,7 @@
         "@tsconfig/node22": "22.0.2",
         "@tsconfig/strictest": "^2.0.5",
         "@types/cacache": "^19.0.0",
-        "@types/node": "24.5.2",
+        "@types/node": "24.9.2",
         "@types/parse-author": "^2.0.3",
         "@types/ssri": "^7.1.5",
         "@visulima/packem": "^1.28.3",
