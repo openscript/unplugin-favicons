@@ -95,7 +95,7 @@
     },
     "dependencies": {
         "@visulima/find-cache-dir": "^1.0.34",
-        "@visulima/package": "^3.5.11",
+        "@visulima/package": "^4.0.0",
         "cacache": "^20.0.1",
         "consola": "3.4.2",
         "fast-json-stable-stringify": "^2.1.0",
