@@ -99,7 +99,7 @@
         "cacache": "^20.0.1",
         "consola": "3.4.2",
         "fast-json-stable-stringify": "^2.1.0",
-        "magic-string": "0.30.19",
+        "magic-string": "0.30.21",
         "mime": "^4.1.0",
         "mlly": "1.8.0",
         "parse-author": "^2.0.0",
